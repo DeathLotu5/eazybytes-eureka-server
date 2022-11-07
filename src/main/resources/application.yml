@@ -1,0 +1,8 @@
+#Khai báo thuộc tính giúp ta connect đến configuration server
+spring:
+  application:
+    name: eureka-server
+    #Việc khai báo tên cho application là cần thiết vì nó sẽ được sử dụng đẻ phát hiện file trong config server
+  config:
+    import: optional:configserver:http://localhost:8071
+    #Khai báo vị trí của config server
